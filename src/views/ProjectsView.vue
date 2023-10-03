@@ -25,7 +25,7 @@
                         <a class="other-a" v-if="project.show">{{ project.text }}</a>
                     </td>
                     <td>
-                        <a class="project-a" @click="redirectToExternalLink">Code</a>
+                        <a class="project-a" href="https://github.com/mjtas?tab=repositories" target="_blank">Code</a>
                     </td> 
                     </tr>
                     </tbody>
@@ -63,10 +63,7 @@
                 // Toggle the 'show' property of the found workshop
                 project.show = !project.show;
             }
-        },
-    },
-    redirectToExternalLink() {
-        window.location.href = 'https://github.com/mjtas?tab=repositories';
+        }
     }
-};
+}
 </script>
